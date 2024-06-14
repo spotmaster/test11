@@ -1,0 +1,33 @@
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: calc(100% - 56px);
+    z-index: 1000;
+    background: #343a40;
+    transition: width 0.3s;
+    overflow-x: hidden;
+    &.closed {
+        width: 80px;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            a {
+                display: flex;
+                align-items: center;
+                padding: 15px 20px;
+                color: #fff;
+                text-decoration: none;
+                .icon {
+                    margin-right: 10px;
+                }
+                &:hover {
+                    background: #495057;
+                }
+            }
+        }
+    }
+}
