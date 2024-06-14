@@ -1,11 +1,10 @@
-<div class="logo" [class.closed]="!isSidebarOpen">
-    <a href="#">
-        <span class="logo-full" *ngIf="isSidebarOpen">Kurumsal Uygulama Operasyonları</span>
-        <span class="logo-abbr" *ngIf="!isSidebarOpen">K</span>
-    </a>
+<div class="logo">
+    <span class="logo-full" *ngIf="isSidebarOpen">Kurumsal Uygulama Operasyonları</span>
+    <span class="logo-abbr" *ngIf="!isSidebarOpen">KUO</span>
 </div>
 <nav class="sidebar" [class.closed]="!isSidebarOpen">
     <ul class="list-unstyled">
+        <li class="menu-heading" *ngIf="isSidebarOpen">Uygulamalar</li>
         <li><a href="#"><i class="bi bi-house"></i> <span *ngIf="isSidebarOpen">Home</span></a></li>
         <li><a href="#"><i class="bi bi-columns"></i> <span *ngIf="isSidebarOpen">Layouts</span></a></li>
         <li><a href="#"><i class="bi bi-envelope"></i> <span *ngIf="isSidebarOpen">Email</span></a></li>

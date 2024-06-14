@@ -1,3 +1,31 @@
+.logo {
+    background-color: #00bcd4;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    .logo-full {
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .logo-abbr {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .sidebar {
     width: 250px;
     position: fixed;
@@ -17,32 +45,6 @@
         }
         a {
             justify-content: center;
-        }
-    }
-    .logo {
-        background-color: #00bcd4;
-        padding: 15px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 56px; // Yüksekliği ayarladık
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
-        .logo-full {
-            color: #343a40;
-            font-size: 16px;
-            text-decoration: none;
-        }
-        .logo-abbr {
-            color: #fff;
-            font-size: 20px;
-            text-decoration: none;
         }
     }
     ul {
