@@ -5,28 +5,74 @@
     left: 0;
     height: calc(100% - 56px);
     z-index: 1000;
-    background: #343a40;
+    background: #f8f9fa;
+    color: #343a40;
     transition: width 0.3s;
     overflow-x: hidden;
     &.closed {
         width: 80px;
+        .icon {
+            font-size: 2rem;
+            margin: auto;
+        }
+        a {
+            justify-content: center;
+        }
+    }
+    .logo {
+        background-color: #00bcd4;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px; // Yüksekliği ayarladık
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .logo-full {
+            color: #343a40;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .logo-abbr {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
     }
     ul {
         padding: 0;
         list-style: none;
+        .menu-heading {
+            padding: 10px 15px;
+            color: #adb5bd;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
         li {
             a {
                 display: flex;
                 align-items: center;
                 padding: 15px 20px;
-                color: #fff;
+                color: #343a40;
                 text-decoration: none;
                 .icon {
                     margin-right: 10px;
+                    font-size: 1rem;
                 }
                 &:hover {
-                    background: #495057;
+                    background: #e9ecef;
+                    color: #0056b3;
                 }
+            }
+            .active {
+                background-color: #e9ecef;
+                color: #0056b3;
             }
         }
     }
