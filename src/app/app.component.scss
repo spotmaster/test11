@@ -1,0 +1,39 @@
+:host {
+    display: block;
+    position: relative;
+}
+
+app-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+    &.content-expanded {
+        margin-left: 80px;
+    }
+}
+
+app-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

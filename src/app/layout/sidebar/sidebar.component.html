@@ -1,0 +1,9 @@
+<nav class="sidebar" [class.closed]="!isSidebarOpen">
+    <ul class="list-unstyled">
+        <li><a href="#"><i class="icon-home"></i> <span *ngIf="isSidebarOpen">Home</span></a></li>
+        <li><a href="#"><i class="icon-layout"></i> <span *ngIf="isSidebarOpen">Layouts</span></a></li>
+        <li><a href="#"><i class="icon-envelope"></i> <span *ngIf="isSidebarOpen">Email</span></a></li>
+        <li><a href="#"><i class="icon-calendar"></i> <span *ngIf="isSidebarOpen">Calendar</span></a></li>
+        <li><a href="#"><i class="icon-chart"></i> <span *ngIf="isSidebarOpen">Charts</span></a></li>
+    </ul>
+</nav>
